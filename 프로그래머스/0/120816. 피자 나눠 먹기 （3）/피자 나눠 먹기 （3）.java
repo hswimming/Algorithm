@@ -6,7 +6,7 @@ class Solution {
         if (n % slice == 0) {
             answer = pizza;
         } else {
-            // 나머지가 0일 아닐 경우 사람의 수가 더 많으므로 피자를 추가
+            // 나머지가 0이 아닐 경우 사람의 수가 더 많으므로 피자를 추가
             answer = pizza + 1;
         }
         
