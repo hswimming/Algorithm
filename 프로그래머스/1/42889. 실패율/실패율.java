@@ -34,7 +34,7 @@ class Solution {
             person -= fail;
         }
         
-        // 정렬한 스테이지 번호를 담을 배열
+        // 정렬한 스테이지 번호를 담을 리스트
         List<Integer> arr = new ArrayList<>(map.keySet());
         
         Collections.sort(arr, (o1, o2) -> {
