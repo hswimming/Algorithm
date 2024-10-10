@@ -13,6 +13,7 @@ class Solution {
             }
         }
         
+        // StringBuilder => String 변환
         return answer = String.valueOf(result);
     }
 }
