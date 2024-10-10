@@ -15,7 +15,6 @@ class Solution {
         
         // 중복제거
         arr = arr.stream().distinct().collect(Collectors.toList());
-        
         int[] answer = new int[arr.size()];
         
         // 리스트 -> 배열
