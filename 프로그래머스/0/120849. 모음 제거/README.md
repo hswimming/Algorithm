@@ -1,10 +1,10 @@
 # [level 0] 모음 제거 - 120849 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120849) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120849?language=java) 
 
 ### 성능 요약
 
-메모리: 32.7 MB, 시간: 0.15 ms
+메모리: 75.1 MB, 시간: 0.52 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 10월 30일 22:00:17
+2024년 10월 31일 03:24:13
 
 ### 문제 설명
 
