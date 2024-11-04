@@ -7,7 +7,7 @@ class Solution {
             // my_string 문자열을 char로 변환하여 한 글자씩 확인
             char ch = my_string.charAt(i);
             
-            // 자연수일 경우 StringBuilder => String => int 변환 후 연산
+            // 자연수일 경우 String => int 변환 후 연산
             if (String.valueOf(ch).matches(pattern) == false) {
                 answer += Integer.parseInt(String.valueOf(ch));
             }
