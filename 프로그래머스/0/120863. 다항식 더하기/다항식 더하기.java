@@ -17,7 +17,7 @@ class Solution {
                 // x 앞에 숫자가 없으면 1로 간주, 있으면 형 변환 후 연산
                 linear += s.isEmpty() ? 1 : Integer.parseInt(s);
             } else if (str[i].matches(pattern) == true) {
-                // 숫자인지 확인하는 정규 표현식을 만족하면 연산
+                // 숫자로만 구성된 문자열이면 조건 만족
                 quadratic += Integer.parseInt(str[i]);
             }
         }
@@ -27,7 +27,8 @@ class Solution {
             answer += (linear == 1 ? "x" : linear + "x");
         }
         
-        // 숫자항이 존재하면 일차항 + 숫자항 합친 문자열 반환
+        // 상수항이 존재하면 일차항 + 상수항 합친 문자열 반환
+        // 문자열과 숫자가 함께 있으면 자동으로 숫자가 문자열로 변환
         if (quadratic != 0) {
             answer += (linear != 0 ? " + " : "") + quadratic;
         }
