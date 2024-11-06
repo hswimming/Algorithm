@@ -1,7 +1,6 @@
 function solution(keyinput, board) {
     // up [0, 1] down [0, -1] left [-1, 0] right [1, 0]
     
-    
     // 맵의 크기에 따라 이동할 칸이 초과하지 않는지 확인
     // 소수점 버려야 비교 가능
     var x = Math.floor(board[0] / 2);
