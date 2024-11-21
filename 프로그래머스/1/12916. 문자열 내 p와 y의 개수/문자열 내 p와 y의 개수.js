@@ -5,11 +5,12 @@ function solution(s){
     var countY = 0;
     var answer = true;
     
+    // 정규 표현식을 만족하는 p, y 개수 카운트
     for (let i = 0; i < py.length; i++) {
         if (/[p]/.test(py[i]) === true) {
-            countP++; // p 개수 카운트
+            countP++;
         } else if (/[y]/.test(py[i]) === true) {
-            countY++; // y 개수 카운트
+            countY++;
         }
     }
 
