@@ -9,5 +9,5 @@ function solution(x) {
     }
     
     // 매개변수 x가 자릿수의 합으로 나누어 떨어지면 하샤드 수
-    return answer = (x % num === 0) ? true : false;
+    return answer = (x % num === 0);
 }
