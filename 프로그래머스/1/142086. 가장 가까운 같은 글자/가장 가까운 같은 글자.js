@@ -2,7 +2,7 @@ function solution(s) {
     var answer = [];
     var str = [];
     
-    var str = [...s].map((cur, idx) => { // 전개 연산자로 배열처럼 사용
+    [...s].map((cur, idx) => { // 전개 연산자로 배열처럼 사용
         if (!str.includes(cur)) {
             answer.push(-1);
         } else {
