@@ -5,7 +5,7 @@ function solution(answers) {
     
     // 수포자가 찍는 방식과 정답 배열의 일치하는 요소만 추출한 배열의 길이
     // i가 배열의 길이를 초과하더라도 배열의 인덱스를 순환하도록 설정
-    // % 연산은 나누어지는 숫자보다 작은 값은 그대로 유지됨 (1 % 5 => 5)
+    // % 연산은 나누어지는 숫자보다 작은 값은 그대로 유지됨 (1 % 5 => 1)
     var result1 = answers.filter((e, i) => e === arr1[i % arr1.length]).length;
     var result2 = answers.filter((e, i) => e === arr2[i % arr2.length]).length;
     var result3 = answers.filter((e, i) => e === arr3[i % arr3.length]).length;
