@@ -16,7 +16,7 @@ class Solution {
         return answer;
     }
     
-    // wile문 안의 if문으로 작성해도 되지만 가독성 떨어짐
+    // while문 안의 if문으로 작성해도 되지만 가독성 떨어짐
     public static boolean size(int[] wallet, int[] bill) {
         int minBill = Math.min(bill[0], bill[1]);
         int minWallet = Math.min(wallet[0], wallet[1]);
