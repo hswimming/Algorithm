@@ -22,7 +22,7 @@ class Solution {
             new_id = new_id.substring(0, 15).replaceAll("[.]$", "");
         }
         
-        // 7. 길이가 2 이하라면 마지막 문자를 길이가 3이 될 때까지 반복
+        // 7. 길이가 2 이하면 마지막 문자를 길이가 3이 될 때까지 반복
         while (new_id.length() < 3) {
             new_id += new_id.charAt(new_id.length() - 1);
         }
