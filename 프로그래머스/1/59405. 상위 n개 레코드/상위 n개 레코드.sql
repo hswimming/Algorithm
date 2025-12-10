@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT NAME
+  FROM ANIMAL_INS
+ WHERE DATETIME = (
+       SELECT MIN(DATE_FORMAT(DATETIME, '%Y%m%d%H%i%s'))
+       FROM ANIMAL_INS
+ );
