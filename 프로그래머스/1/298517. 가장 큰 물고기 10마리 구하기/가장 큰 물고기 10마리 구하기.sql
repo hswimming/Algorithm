@@ -1,0 +1,17 @@
+-- 코드를 작성해주세요
+# 순위 구하기
+# SELECT ID,
+#        LENGTH,
+#        RANK() OVER (ORDER BY LENGTH DESC, ID) AS RANKING
+#   FROM FISH_INFO
+#  WHERE LENGTH IS NOT NULL;
+
+SELECT ID, LENGTH
+  FROM (
+        SELECT ID,
+               LENGTH,
+               RANK() OVER (ORDER BY LENGTH DESC, ID) AS RANKING
+          FROM FISH_INFO
+         WHERE LENGTH IS NOT NULL
+  ) AS RANKTB
+ WHERE RANKTB.RANKING < 11;
