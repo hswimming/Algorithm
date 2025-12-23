@@ -1,0 +1,10 @@
+-- 코드를 입력하세요
+# 가장 먼저 들어온 동물
+# SELECT MIN(DATETIME)
+# FROM ANIMAL_INS;
+
+SELECT T.TIME AS '시간'
+  FROM (
+      SELECT MIN(DATETIME) AS TIME
+      FROM ANIMAL_INS
+  ) AS T
